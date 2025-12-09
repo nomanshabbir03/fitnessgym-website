@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join FitLife Gym and transform your body and mind with personal training, group classes, and more.">
+    <title>FitLife Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+
+        .nav-active {
+            border-bottom: 2px solid #FF6B35;
+        }
+
+        .hover-shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200 scroll-smooth">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2xl font-bold text-orange-500">FitLife</div>
+            <nav>
+                <ul class="flex gap-6">
+                    <li><a href="#hero" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="#services" class="hover:text-orange-500">Services</a></li>
+                    <li><a href="#about" class="hover:text-orange-500">About</a></li>
+                    <li><a href="#pricing" class="hover:text-orange-500">Pricing</a></li>
+                    <li><a href="#testimonials" class="hover:text-orange-500">Testimonials</a></li>
+                    <li><a href="#gallery" class="hover:text-orange-500">Gallery</a></li>
+                    <li><a href="#contact" class="hover:text-orange-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section id="hero" class="relative h-screen overflow-hidden">
+        <!-- Slides -->
+        <div class="w-full h-full relative">
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 z-10"
+                style="background-image: url('https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');">
+                <div
+                    class="bg-black/50 w-full h-full flex flex-col justify-center items-center text-center text-white px-6">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeIn">Transform Your Body, Transform Your
+                        Life</h1>
+                    <p class="mb-6 text-lg md:text-2xl animate-fadeIn delay-300">Join FitLife Gym and start your fitness
+                        journey today!</p>
+                    <a href="#contact"
+                        class="px-8 py-4 bg-orange-500 hover:bg-orange-600 rounded-full font-semibold transition-all duration-300 animate-fadeIn delay-500">Join
+                        Now</a>
+                </div>
+            </div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 z-0"
+                style="background-image: url('https://plus.unsplash.com/premium_photo-1664109999781-27f77214bcfc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGd5bSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');">
+                <div
+                    class="bg-black/50 w-full h-full flex flex-col justify-center items-center text-center text-white px-6">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeIn">Push Your Limits, See Real Results
+                    </h1>
+                    <p class="mb-6 text-lg md:text-2xl animate-fadeIn delay-300">Personal training and group classes to
+                        reach your peak.</p>
+                    <a href="#contact"
+                        class="px-8 py-4 bg-orange-500 hover:bg-orange-600 rounded-full font-semibold transition-all duration-300 animate-fadeIn delay-500">Join
+                        Now</a>
+                </div>
+            </div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 z-0"
+                style="background-image: url('https://images.unsplash.com/photo-1574755851171-8959b8334d6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGd5bSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');">
+                <div
+                    class="bg-black/50 w-full h-full flex flex-col justify-center items-center text-center text-white px-6">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeIn">Strong Body, Strong Mind</h1>
+                    <p class="mb-6 text-lg md:text-2xl animate-fadeIn delay-300">Join our yoga and fitness programs to
+                        balance your life.</p>
+                    <a href="#contact"
+                        class="px-8 py-4 bg-orange-500 hover:bg-orange-600 rounded-full font-semibold transition-all duration-300 animate-fadeIn delay-500">Join
+                        Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4 z-20">
+            <span class="dot w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></span>
+            <span class="dot w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></span>
+            <span class="dot w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></span>
+        </div>
+    </section>
+
+    <style>
+        /* Fade-in animation for hero text */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        .animate-fadeIn.delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .animate-fadeIn.delay-500 {
+            animation-delay: 0.5s;
+        }
+    </style>
+
+    <script>
+        // Slider JS
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+                slide.style.zIndex = i === index ? '10' : '0';
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('bg-orange-500', i === index);
+                dot.classList.toggle('bg-gray-400', i !== index);
+            });
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // Dot navigation
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Initial display
+        showSlide(currentSlide);
+    </script>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-orange-500">Our Services</h2>
+
+        <div class="grid md:grid-cols-4 gap-8">
+
+            <div class="bg-gray-800 rounded-lg p-6 text-center hover-shadow transition-all duration-300">
+                <img src="weightlifting.png" class="mx-auto mb-4" alt="Personal Training" width="100px">
+                <h3 class="text-xl font-semibold mb-2">Personal Training</h3>
+                <p>One-on-one coaching to achieve your fitness goals faster.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6 text-center hover-shadow transition-all duration-300">
+                <img src="https://img.icons8.com/color/96/group.png" class="mx-auto mb-4" alt="Group Classes">
+                <h3 class="text-xl font-semibold mb-2">Group Classes</h3>
+                <p>Energetic classes for all fitness levels and ages.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6 text-center hover-shadow transition-all duration-300">
+                <img src="diet.png " class="mx-auto mb-4" alt="Nutrition Plans" width="100px">
+                <h3 class="text-xl font-semibold mb-2">Nutrition Plans</h3>
+                <p>Custom meal plans to complement your workouts.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6 text-center hover-shadow transition-all duration-300">
+                <img src="https://img.icons8.com/color/96/yoga.png" class="mx-auto mb-4" alt="Yoga">
+                <h3 class="text-xl font-semibold mb-2">Yoga</h3>
+                <p>Relax, stretch, and strengthen your body and mind.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center">
+
+            <!-- Text Section -->
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-orange-500 mb-6">About FitLife Gym</h2>
+                <p class="mb-4">FitLife Gym was founded with a mission to help everyone achieve their fitness goals.
+                    Our expert trainers and state-of-the-art facilities ensure you get the best experience possible.</p>
+                <p>Our trainers are certified professionals with years of experience in personal training, group
+                    fitness, and nutrition guidance.</p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?w=600&auto=format&fit=crop&q=60"
+                        alt="Trainer 1">
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1549476464-37392f717541?w=600&auto=format&fit=crop&q=60"
+                        alt="Trainer 2">
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1758875569256-f37c438cac65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzA2fHxneW0lMjB0cmFpbmVyfGVufDB8fDB8fHww"
+                        alt="Trainer 3">
+                </div>
+                <div class="trainer-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1672280783587-fc8f0e196a37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxneW0lMjB0cmFpbmVyfGVufDB8fDB8fHww"
+                        alt="Trainer 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Make all trainer images equal-sized and clean */
+        .trainer-card {
+            width: 100%;
+            height: 170px;
+            /* You can increase or decrease */
+            overflow: hidden;
+            border-radius: 12px;
+            position: relative;
+            background: #111;
+        }
+
+        /* Fit and center the image */
+        .trainer-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s ease;
+        }
+
+        /* Hover zoom effect */
+        .trainer-card:hover img {
+            transform: scale(1.08);
+            filter: brightness(1.1);
+        }
+    </style>
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-orange-500">Pricing Plans</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-xl p-8 text-center hover-shadow transition-all duration-300">
+                <h3 class="text-2xl font-semibold mb-4">Starter</h3>
+                <p class="text-4xl font-bold mb-4">$29<span class="text-lg font-normal">/month</span></p>
+                <ul class="mb-6 text-left">
+                    <li>✔ Access to gym</li>
+                    <li>✔ 1 Personal Training Session</li>
+                    <li>✔ Group Classes</li>
+                </ul>
+                <a href="#contact"
+                    class="px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition-all duration-300">Join
+                    Now</a>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-8 text-center hover-shadow transition-all duration-300">
+                <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+                <p class="text-4xl font-bold mb-4">$49<span class="text-lg font-normal">/month</span></p>
+                <ul class="mb-6 text-left">
+                    <li>✔ Access to gym</li>
+                    <li>✔ 3 Personal Training Sessions</li>
+                    <li>✔ Nutrition Plan</li>
+                    <li>✔ Group Classes</li>
+                </ul>
+                <a href="#contact"
+                    class="px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition-all duration-300">Join
+                    Now</a>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-8 text-center hover-shadow transition-all duration-300">
+                <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+                <p class="text-4xl font-bold mb-4">$79<span class="text-lg font-normal">/month</span></p>
+                <ul class="mb-6 text-left">
+                    <li>✔ Unlimited Access</li>
+                    <li>✔ Weekly Personal Training</li>
+                    <li>✔ Nutrition Plan</li>
+                    <li>✔ Yoga & Group Classes</li>
+                    <li>✔ Exclusive Workshops</li>
+                </ul>
+                <a href="#contact"
+                    class="px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition-all duration-300">Join
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-900 px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-orange-500">What Our Clients Say</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div class="bg-gray-800 rounded-lg p-6 hover-shadow transition-all duration-300">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full"
+                        alt="Client 1">
+                    <div>
+                        <h4 class="font-semibold">John Doe</h4>
+                        <div class="text-yellow-400">★★★★☆</div>
+                    </div>
+                </div>
+                <p>"Amazing trainers and supportive environment. I achieved my fitness goals faster than I imagined!"
+                </p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-6 hover-shadow transition-all duration-300">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full"
+                        alt="Client 2">
+                    <div>
+                        <h4 class="font-semibold">Sarah Lee</h4>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                </div>
+                <p>"The group classes are fun and energetic. The trainers really care about your progress."</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-6 hover-shadow transition-all duration-300">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-12 h-12 rounded-full"
+                        alt="Client 3">
+                    <div>
+                        <h4 class="font-semibold">Mike Johnson</h4>
+                        <div class="text-yellow-400">★★★★☆</div>
+                    </div>
+                </div>
+                <p>"Highly recommend FitLife Gym. The nutrition plans really complement the workout sessions."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-orange-500">Our Gym & Classes</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fHww"
+                class="rounded-lg hover-shadow transition-all duration-300" alt="Gallery 1">
+            <img src="https://images.unsplash.com/photo-1596357395104-ba989e72b5ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8"
+                class="rounded-lg hover-shadow transition-all duration-300" alt="Gallery 2">
+            <img src="https://images.unsplash.com/photo-1649068618811-9f3547ef98fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D"
+                class="rounded-lg hover-shadow transition-all duration-300" alt="Gallery 3">
+            <img src="https://images.unsplash.com/photo-1694712247863-046c39e04d28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcxfHxneW0lMjBjbGFzc2VzfGVufDB8fDB8fHww"
+                class="rounded-lg hover-shadow transition-all duration-300" alt="Gallery 4">
+            <img src="https://plus.unsplash.com/premium_photo-1663126246796-999a49ec8736?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg2fHxneW0lMjBjbGFzc2VzfGVufDB8fDB8fHww"
+                class="rounded-lg hover-shadow transition-all duration-300" alt="Gallery 5">
+            <img src="https://plus.unsplash.com/premium_photo-1664299208816-ef56887db111?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk1fHxneW0lMjBjbGFzc2VzfGVufDB8fDB8fHww"
+                class="rounded-lg hover-shadow transition-all duration-300" alt="Gallery 6">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-orange-500">Get in Touch</h2>
+        <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-xl hover-shadow transition-all duration-300">
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2">Name</label>
+                    <input type="text"
+                        class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-orange-500"
+                        placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Email</label>
+                    <input type="email"
+                        class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-orange-500"
+                        placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Message</label>
+                    <textarea
+                        class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-orange-500"
+                        rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button
+                    class="px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition-all duration-300">Send
+                    Message</button>
+            </form>
+            <div class="mt-8 text-gray-400">
+                <p>📍 123 Fitness St, Your City</p>
+                <p>📞 +123 456 7890</p>
+                <div class="flex gap-4 mt-2">
+                    <a href="#" class="hover:text-orange-500">Facebook</a>
+                    <a href="#" class="hover:text-orange-500">Instagram</a>
+                    <a href="#" class="hover:text-orange-500">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 mt-12 text-gray-400">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p>© 2025 Noman Shabbir. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-orange-500">Home</a>
+                <a href="#services" class="hover:text-orange-500">Services</a>
+                <a href="#contact" class="hover:text-orange-500">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky navbar highlight on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        /* Fade-in animation for hero text */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+    </style>
+
+
+</body>
+
+</html>
